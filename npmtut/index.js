@@ -4,6 +4,7 @@ const cors = require('cors')
 
 app.use(express.json()) // json-parser in the express lib
 app.use(cors())
+app.use(express.static('dist'))
 
 let notes = [
     { id: "1", content: "HTML is easy", important: true },
@@ -65,7 +66,7 @@ app.post('/api/notes', (request, response) => {
     response.json(note)
 })
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log("Server running on port", PORT)
 })
