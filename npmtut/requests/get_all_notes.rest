@@ -2,10 +2,13 @@ POST http://localhost:3001/api/notes/
 Content-Type: application/json
 
 {
-    "content": "Postman is good in backend testing",
+    "content": "Always Validate your data before posting.",
     "important": true
 }
 
 ###
 
-GET http://localhost:3001/api/notes/680b134b82ba8bfb8e3692ba
+GET http://localhost:3001/api/notes/
+
+###
+GET http://localhost:3001/api/notes/680b13071a782046f36f9ss9
